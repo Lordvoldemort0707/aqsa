@@ -1,24 +1,24 @@
-# Krshak product labels
+# Krshak pack labels
 
-12 bilingual (Hindi + English) labels under the Krshak brand. Each label has a front and a back face, both 100 × 150 mm.
+Three products. The crops shown on each pack are the crops the formulation is recommended for.
 
-| Formulation | Products |
-|---|---|
-| NPK 11:11:08 + Zn + B (green) | Wheat 1, Maize 1, Ganna 1, Mustard 1, Chana 1 |
-| NPK 6:00:18 + Ca + Mg + B (magenta) | Pyaz 1, Garlic 1, Chana 2 |
-| Thiomate-K + Boron (amber) | Wheat 2, Mustard 2, Pyaz 2, Garlic 2 |
+| Product | Formulation | Pack | Crops |
+|---|---|---|---|
+| **BUNIYAD बुनियाद** | NPK 11:11:08 + Zn + B | Pouch/bag, 220 × 320 mm, front + back | Wheat, Maize, Ganna, Mustard, Chana |
+| **DAMDAAR दमदार** | NPK 6:00:18 + Ca + Mg + B | Bottle wrap, 240 × 110 mm (70 · 100 · 70) | Pyaz, Garlic, Chana |
+| **CHAMAK चमक** | Thiomate-K + Boron | Bottle wrap, 240 × 110 mm (70 · 100 · 70) | Wheat, Mustard, Pyaz, Garlic |
 
-## Files
-- `labels.html` – source. Edit the `BRAND`, `FORMULAS` and `PRODUCTS` objects at the top of the script. Any value left as `""` prints as a blank line (highlighted yellow on screen).
-- `Krshak-labels-all-12.pdf` – print file: one A4 landscape page per product, front + back.
-- `png/` – each face at 2× resolution (`<product>-front.png`, `<product>-back.png`).
-- `Krshak-labels-overview.png` – all 12 fronts on one sheet.
-- `assets/` – Krshak logo (from krshak.com) and a QR code linking to krshak.com.
+## Files (`packs/`)
+- `Krshak-all-pack-labels.pdf`: all 4 faces, each page at exact print size
+- `BUNIYAD-pouch-220x320mm.pdf`, `DAMDAAR-bottle-wrap-240x110mm.pdf`, `CHAMAK-bottle-wrap-240x110mm.pdf`
+- `*.png`: high-resolution renders (3×)
+- `Krshak-pack-mockups.png`: the labels shown on a bag and bottles
 
-## Still to fill before printing
-- Zn, B, Ca, Mg, K₂O and S percentages (only the N-P-K grades are known)
-- Dose per acre, time and method of application
-- Net content, MRP, manufacturer name and address, manufacturing licence / FCO registration no.
-- Batch, Mfg. date and Expiry (usually stamped at packing)
+Source: `packs.html`. All text is in the `BRAND` and `PACKS` objects at the top of the script. A value left as `""` prints as a blank line.
 
-Brand details come from krshak.com: MatraBhumi Technology Pvt. Ltd., 306/10, Sheila Bypass Rd, Ram Gopal Colony, Rohtak, Haryana 124001 · team@krshak.com · 98172 47342.
+## Fill before printing
+- Zn, B, Ca, Mg, K₂O and S % (only the N-P-K grades were given)
+- Dose per crop, net weight/content, MRP
+- Manufacturer name and address, licence/registration no.
+- Batch, Mfg. date and Expiry (stamped at packing)
+- Check the application timings and benefit claims with your agronomist
